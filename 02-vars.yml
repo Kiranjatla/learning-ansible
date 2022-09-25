@@ -52,6 +52,3 @@
       ansible.builtin.debug:
       msg: "{{out}}"
 
-
-
-
