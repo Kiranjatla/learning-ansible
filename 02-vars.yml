@@ -6,6 +6,7 @@
     - name: Print URL
       ansible.builtin.debug:
          msg: URL = {{ URL }}
+
 - name: Demo On File Variable
   hosts: all
   vars_files:
@@ -33,11 +34,13 @@
     - name: Print URL
       ansible.builtin.debug:
         msg: URL == {{ URL }}
+
 - name: Print Fact
   hosts: all
   tasks:
     - ansible.builtin.debug:
         msg: Hostname = {{ ansible_hostname }}
+
 - name: Register a variable example
   hosts: all
   tasks:
