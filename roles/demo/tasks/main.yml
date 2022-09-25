@@ -6,6 +6,6 @@
   ansible.builtin.debug:
     msg: "{{out.stdout}}"
 
-- name: print URL
+- name: Print URL
   ansible.builtin.debug:
-    msg: {{URL}}
+    msg: URL = {{ URL }}
