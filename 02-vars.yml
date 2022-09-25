@@ -44,6 +44,7 @@
     - name: Get Uptime
       ansible.builtin.shell: uptime
       register: out
+
     - name: Print out register
       ansible.builtin.debug:
       msg: "{{out}}"
