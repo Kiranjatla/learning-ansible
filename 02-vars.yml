@@ -13,7 +13,7 @@
   tasks:
     - name: print URL
       ansible.builtin.debug:
-        msg: URL = {{ URL }}
+        msg: "{{ URL }}"
 ## Variables can be accessed as , Spaces are not mandatory
 # {{VAR_NAME}} or {{ VAR_NAME }}
 
