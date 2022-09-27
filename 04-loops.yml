@@ -1,10 +1,17 @@
 - name: Demo on Loops
   hosts: localhost
   tasks:
-    - name: Print Debug
+    - name: Print Debug With List of values loop
       ansible.builtin.debug:
         msg: Fruit Name = {{item}}
       loop:
         - apple
         - banana
         - orange
+    - name: Print Debug with list of maps
+      ansible.builtin.debug:
+        msg: Fruit Name = {{item}}
+      loop:
+        - {name: "Apple", quantity: 100}
+        - {name: "Banana", quantity: 200}
+        - {name: "Orange", quantity: 60}
