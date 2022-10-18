@@ -1,0 +1,4 @@
+hosts: all
+tasks:
+  - name: pull secret
+    debug: msg="{{lookup('amazon.aws.aws_secret', 'roboshop/all-secrets') }}"
