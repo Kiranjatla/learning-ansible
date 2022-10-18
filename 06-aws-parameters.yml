@@ -1,4 +1,5 @@
-hosts: localhost
-tasks:
-  - name: Pull secret
-    debug: msg="{{ lookup('amazon.aws.aws_secret', 'roboshop/all-secrets') }}"
+- name: Demo on pulling aws secrets and parameters
+  hosts: localhost
+  tasks:
+    - name: Pull secret
+      debug: msg="{{ lookup('amazon.aws.aws_secret', 'roboshop/all-secrets') }}"
