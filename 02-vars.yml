@@ -15,7 +15,7 @@
     - name: print URL
       ansible.builtin.debug:
         msg: "{{URL}}"
-## Variables can be accessed as , Spaces are not mandatory
+## Variables can be accessed as below, spaces are not mandatory
 # {{VAR_NAME}} or {{ VAR_NAME }}
 # u can use msg: "{{URL}}" (or) msg: URL = {{ URL }}
 
